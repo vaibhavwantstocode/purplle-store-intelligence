@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.db
+*.db-shm
+*.db-wal
+.env
+.venv/
+venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Video clips and extracted frames are not committed (large binary, licence-restricted)
+Videos/
+frames_tmp/
+pipeline/models/
+
+# Emitted events JSONL from the detection pipeline (large, generated artifact)
+pipeline/events*.jsonl

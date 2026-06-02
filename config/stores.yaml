@@ -1,0 +1,20 @@
+# Store ID registry.
+# canonical: authoritative IDs used in all internal processing.
+# aliases:   any raw ID variant → canonical ID.
+#            The acceptance gate tests STORE_BLR_002, which maps to ST1008.
+
+canonical:
+  - ST1008   # Store 1 — synchronized, POS-backed, 2026-04-10
+  - ST1076   # Store 2 — per-camera only, sample_events store
+
+aliases:
+  # Acceptance-gate alias (spec hard-codes this in the test URL)
+  STORE_BLR_002: ST1008
+
+  # Case/format variants seen across the three data sources
+  store_1008: ST1008
+  store_1076: ST1076
+
+  # POS file uses ST1008 already — no alias needed, but belt-and-suspenders
+  ST1008: ST1008
+  ST1076: ST1076
