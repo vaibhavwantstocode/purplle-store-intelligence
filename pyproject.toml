@@ -9,6 +9,7 @@ dependencies = [
     "pydantic>=2.7.0",
     "pyyaml>=6.0.0",
     "python-multipart>=0.0.9",
+    "supervision>=0.21.0,<1.0.0",
 ]
 
 [project.optional-dependencies]
@@ -20,7 +21,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["app"]
+packages = ["app", "pipeline"]
 
 [build-system]
 requires = ["hatchling"]
